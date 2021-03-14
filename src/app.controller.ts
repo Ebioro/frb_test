@@ -7,6 +7,8 @@ export class AppController {
 
   @Get()
   async getHello() {
-    return await this.appService.getHello();
+    return await this.appService.getTransaction();
+    return await this.appService.sendPayment();
+    //return await this.appService.txBuilder();
   }
 }
